@@ -1,0 +1,42 @@
+{
+    "name": "owldesign/stripe-webhooks",
+    "description": "Handle Stripe webhooks in a CraftCMS application",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "stripe",
+        "stripe webhooks"
+    ],
+    "support": {
+        "docs": "https://github.com/owldesign/Stripe-Webhooks/blob/master/README.md",
+        "issues": "https://github.com/owldesign/Stripe-Webhooks/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vadim Goncharov",
+            "homepage": "https://owl-design.net"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^4.0.0",
+        "stripe/stripe-php": "^8.12.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "owldesign\\stripewebhooks\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Stripe Webhooks",
+        "handle": "stripe-webhooks",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://github.com/owldesign/Stripe-Webhooks/blob/master/CHANGELOG.md",
+        "class": "owldesing\\stripewebhooks\\StripeWebhooks"
+    }
+}
